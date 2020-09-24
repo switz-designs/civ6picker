@@ -1,0 +1,35 @@
+.achRow {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.8);
+    width: 90%;
+    align-content: center;
+    margin: 5px auto;
+}
+
+.achImgBox {
+    padding: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.achImgBox {
+    width: 64px;
+    height: 64px;
+}
+
+.achTextBox {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    justify-content: center;
+}
+
+.achHeader {
+    margin: 0;
+}
+
+.achText {
+    margin: 0 5px 0 0;
+    color: darkgray;
+}

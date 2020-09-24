@@ -1,0 +1,81 @@
+.container {
+    background-image: url(./images/bg1080p.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#contentBox {
+    background-color: rgba(14, 40, 57, 0.6);
+    width: 50vw;
+    height: 96.5%;
+    margin: 0 auto 0 auto;
+    border-style: ridge;
+    border-bottom-width: 0;
+    border-top-width: 0;
+    border-color: goldenrod;
+}
+
+.headerText {
+    margin: auto 0 5px 5px;
+    padding: 2px 0 0 0;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: normal;
+    text-shadow: #095d7f 1px 0 3px;
+}
+
+.headerLink {
+    margin: auto 0 auto 25px;
+    font-weight: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.titleBar {
+    display: flex;
+    flex-direction: row;
+    background: rgba(52, 58, 64, 1);
+    margin: 0;
+    height: auto;
+}
+
+.textInput {
+    margin-left: 5px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background: rgba(52, 58, 64, 1);
+    margin: auto;
+    width: 100%;
+    height: auto;
+    padding: 5px 0;
+}
+
+.footerMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footerLink {
+    margin: auto 5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#disclaimerText {
+    padding: 5px;
+    font-size: small;
+
+}
+
+a {
+    color: white;
+}

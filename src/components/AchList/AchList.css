@@ -1,0 +1,36 @@
+.achListBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.achList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#leaderHeader {
+    display: flex;
+    align-content: center;
+    padding-left: 10px;
+}
+
+#leaderHeaderText {
+    margin: auto 0;
+}
+
+.listHeader {
+    padding-left: 10px;
+}
+
+.leaderImage {
+    height: 64px;
+    width: 64px;
+}
+

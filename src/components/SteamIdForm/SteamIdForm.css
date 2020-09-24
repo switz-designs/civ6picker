@@ -1,0 +1,109 @@
+#steamIdForm {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+#userInputBox {
+    display: flex;
+    flex-direction: column;
+}
+
+#userInputBar {
+    display: flex;
+    flex-direction: row;
+}
+
+#cbUseSteamId {
+    background: black;
+}
+
+
+.submitButton {
+    margin: 15px auto;
+    border-radius: 90px;
+    background-color: #074d3e;
+    color: #cee5ee;
+    width: 80%;
+    border-color: goldenrod;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.errorPlaceholder {
+    height: 1rem;
+}
+
+#errorText {
+    color: red;
+    margin-left: 5px;
+}
+
+.textInput {
+    background: #093051;
+    color: white;
+    border-radius: 5px;
+    border-color: black;
+    padding: 3px 5px;
+    font-weight: bold;
+}
+
+.textInput:disabled {
+    background: #0e2839;
+    color: dimgray;
+}
+
+.checkboxLabel {
+    color: #169d98;
+    font-weight: bold;
+}
+
+.steamIdHelpBox {
+    position: relative;
+    margin-right: 5px;
+}
+.steamIdHelpBox:hover .steamIdHelpIcon {
+    color: aquamarine;
+    border-color: aquamarine;
+}
+
+.steamIdHelpBox:hover .steamIdHelpTextPopup {
+    visibility: visible;
+}
+
+.steamIdHelpIcon {
+    display: flex;
+    border-style: solid;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    cursor: default;
+    color: #cee5ee;
+    border-color: #cee5ee;
+    user-select: none;
+}
+
+.steamIdHelpTextPopup {
+    visibility: hidden;
+    background-color: black;
+    position: absolute;
+    /*display: inline-block;*/
+    width: 20vw;
+    left: -10vw;
+    padding: 5px;
+    margin-top: 5px;
+    border-style: ridge;
+    border-color: #cee5ee;
+    border-width: 2px;
+    z-index: 1;
+    font-size: 0.8em;
+    text-align: center;
+}
+/*.steamIdHelpIcon:hover .steamIdHelpTextPopup {*/
+/*    visibility: visible;*/
+/*    color: red;*/
+/*}*/
