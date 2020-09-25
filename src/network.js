@@ -2,11 +2,12 @@ const axios = require('axios');
 
 
 export function getAllLeaders(setUserDataCallback, getRandomLeaderCallback, setErrorCallback,
-                              setUsingUserDataCallback) {
+                              setUsingUserDataCallback, setFetchingDataCallback) {
     // const url = "http://localhost:5000/getall";
     const url = "https://civ6pickerapi.herokuapp.com/getall";
     console.log("Fetching achievements for all leaders...");
-    axios.get(url, { timeout: 5000 })
+    setFetchingDataCallback(true);
+    axios.get(url, { timeout: 15000 })
         .then((response) => {
             setUserDataCallback(response.data);
             getRandomLeaderCallback(response.data);
@@ -15,15 +16,19 @@ export function getAllLeaders(setUserDataCallback, getRandomLeaderCallback, setE
         .catch((error) => {
             handleError(error, setErrorCallback)
         })
+        .then(() => {
+            setFetchingDataCallback(false)
+        })
 }
 
 export function getUserLeaders(steamId, setUserDataCallback, getRandomLeaderCallback, setErrorCallback,
-                               setUsingUserDataCallback) {
+                               setUsingUserDataCallback, setFetchingDataCallback) {
     // const url_root = "http://localhost:5000/getuserall/";
     const url_root = "https://civ6pickerapi.herokuapp.com/getuserall/";
     console.log("Fetching data for Steam ID " + steamId);
     let url = url_root + steamId.toString();
-    axios.get(url, { timeout: 5000 })
+    setFetchingDataCallback(true);
+    axios.get(url, { timeout: 15000 })
         .then((response) => {
             setUserDataCallback(response.data);
             getRandomLeaderCallback(response.data);
@@ -31,6 +36,9 @@ export function getUserLeaders(steamId, setUserDataCallback, getRandomLeaderCall
         })
         .catch((error) => {
             handleError(error, setErrorCallback)
+        })
+        .then(() => {
+            setFetchingDataCallback(false)
         })
 }
 

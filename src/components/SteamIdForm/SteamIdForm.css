@@ -47,6 +47,8 @@
     border-color: black;
     padding: 3px 5px;
     font-weight: bold;
+    max-height: 1em;
+    max-width: 45%;
 }
 
 .textInput:disabled {
@@ -102,6 +104,11 @@
     z-index: 1;
     font-size: 0.8em;
     text-align: center;
+}
+
+.emphasisText {
+    font-style: italic;
+    color: aquamarine;
 }
 /*.steamIdHelpIcon:hover .steamIdHelpTextPopup {*/
 /*    visibility: visible;*/

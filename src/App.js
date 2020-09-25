@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import Loader from 'react-loader-spinner';
 import './App.css';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-import AchList from './components/AchList'
-import SteamIdForm from './components/SteamIdForm'
+import AchList from './components/AchList';
+import SteamIdForm from './components/SteamIdForm';
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
     const [usingUserData, setUsingUserData] = useState(false);
     const [randomLeaderData, setRandomLeaderData] = useState();
     const [showDisclaimer, setShowDisclaimer] = useState(false);
+    const [fetchingData, setFetchingData] = useState(false);
 
     function toggleDisclaimer() {
         setShowDisclaimer(!showDisclaimer)
@@ -52,19 +55,31 @@ function App() {
                     getRandomLeaderCallback={getRandomLeader}
                     userData={userData}
                     setUsingUserDataCallback={setUsingUserData}
+                    setFetchingDataCallback={setFetchingData}
                 />
 
-                {randomLeaderData
-                    ? <AchList data={randomLeaderData} usingUserData={usingUserData}/>
-                    : ""
+                {/*{randomLeaderData*/}
+                {/*    ? <AchList data={randomLeaderData} usingUserData={usingUserData} />*/}
+                {/*    : ""*/}
+                {/*}*/}
+
+                {fetchingData
+                    // Display while querying API
+                    ? <Loader className={"loader"} type="Grid" color="#169d98" height={80} width={80} />
+                    // Display achievement list if present, otherwise display nothing
+                    : (randomLeaderData
+                        ? <AchList data={randomLeaderData} usingUserData={usingUserData} />
+                        : null
+                    )
                 }
+
             </div>
 
             <div className={"footer"} onMouseLeave={closeDisclaimer}>
                 <div id={"footerMenu"}>
                     <span className={"footerLink"} onClick={toggleDisclaimer}>Disclaimer</span>
                     {showDisclaimer
-                        ? <div id={"disclaimerText"}>
+                        ? <div id={"disclaimerText"} onClick={closeDisclaimer}>
                             <p>Leader icons were sourced from the <a href={"https://civilization.fandom.com/wiki/Civilization_Games_Wiki"}>Fandom Civilization Wiki</a>. Thank you to the many users who worked to create them.</p>
                             <p>All images are property of their respective copyright holders and are used under fair use.</p>
                             <p>This software is not endorsed by or associated with 2K Games or Firaxis Games Inc. Steam API used under license.</p>

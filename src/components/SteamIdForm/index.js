@@ -34,7 +34,7 @@ function SteamIdForm(props) {
             }
             // Query API for all achievement/leader data
             else if (inputHasChanged || !props.userData) {
-                network.getUserLeaders(steamIdInput, props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback);
+                network.getUserLeaders(steamIdInput, props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
                 setInputHasChanged(false)
             }
             else if (props.userData) {
@@ -44,7 +44,7 @@ function SteamIdForm(props) {
         }
         else if (inputHasChanged || !props.userData){
             // Query API for achievement/leader data filtered by user ID
-            network.getAllLeaders(props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback);
+            network.getAllLeaders(props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
             setInputHasChanged(false)
         }
         else if (props.userData) {
@@ -76,8 +76,8 @@ function SteamIdForm(props) {
                         </div>
                         <div className={"steamIdHelpTextPopup"}>
                             Enter your 17-digit Steam ID here to receive a leader recommendation based on your unearned
-                            Steam achievements. Your Steam profile must be set to public for this feature to work.
-                            Click <a href={"https://www.businessinsider.com/how-to-find-steam-id"} target={"_blank"}>here</a> if you need help finding it.
+                            Steam achievements. Click <a href={"https://www.businessinsider.com/how-to-find-steam-id"} target={"_blank"} rel={"noopener noreferrer"}>here</a> if you need help finding it.
+                            <p className={"emphasisText"}>Your Steam profile must be set to public for this feature to work.</p>
                         </div>
                     </div>
 
