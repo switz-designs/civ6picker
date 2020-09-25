@@ -88,13 +88,10 @@ function SteamIdForm(props) {
                     <input className={"textInput"} type="text" value={steamIdInput} onChange={handleTextChange} disabled={!useUserData} />
 
                 </div>
-                    <input className={"submitButton"} type="submit" value="Who Should I Play?" />
+                <div id={"errorText"}>{queryError.errorText}</div>
+                <input className={"submitButton"} type="submit" value="Who Should I Play?" />
 
             </div>
-            { queryError.error
-                    ? <span id={"errorText"}>{queryError.errorText}</span>
-                    : <span className={"errorPlaceholder"}> </span>
-            }
         </form>
     )
 }

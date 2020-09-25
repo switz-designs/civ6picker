@@ -16,9 +16,8 @@ function AchList(props) {
                 <h3 className={"leaderHeaderText"}>You should play as: </h3>
                 <div className={"leaderSelection"}>
                     <img className={"leaderImage"} src={imageSwitch.getLeaderImage(data.leader)} alt={data.leader} />
-                    <h3 className={"leaderHeaderText"}>{data.leader}</h3>
+                    <h2 className={"leaderSelectionText"}>{data.leader}</h2>
                 </div>
-
             </div>
             <h4 className={"listHeader"}>
                 {props.usingUserData

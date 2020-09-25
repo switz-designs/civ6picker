@@ -20,7 +20,7 @@
 
 
 .submitButton {
-    margin: 15px auto;
+    margin: auto;
     border-radius: 90px;
     background-color: #074d3e;
     color: #cee5ee;
@@ -31,13 +31,12 @@
     font-size: 1em;
 }
 
-.errorPlaceholder {
-    height: 1rem;
-}
 
 #errorText {
     color: red;
-    margin-left: 5px;
+    margin-top: 5px;
+    height: 1.5em;
+    text-align: center;
 }
 
 .textInput {

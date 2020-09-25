@@ -22,12 +22,17 @@
     padding-left: 10px;
 }
 
-#leaderHeaderText {
-    margin: auto 0;
+.leaderHeaderText {
+    margin: 0 0 10px 0;
+}
+
+.leaderSelectionText {
+    margin: 0
 }
 
 .listHeader {
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .leaderImage {
@@ -39,5 +44,7 @@
 .leaderSelection {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    font-family: "Times New Roman", Times, serif;
 }
 
