@@ -77,7 +77,7 @@ function SteamIdForm(props) {
                         <div className={"steamIdHelpTextPopup"}>
                             Enter your 17-digit Steam ID here to receive a leader recommendation based on your unearned
                             Steam achievements. Click <a href={"https://www.businessinsider.com/how-to-find-steam-id"} target={"_blank"} rel={"noopener noreferrer"}>here</a> if you need help finding it.
-                            <p className={"emphasisText"}>Your Steam profile must be set to public for this feature to work.</p>
+                            <p className={"emphasisText"}>Game Details must be set to public on your Steam profile for this feature to work.</p>
                         </div>
                     </div>
 

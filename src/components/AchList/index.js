@@ -13,10 +13,12 @@ function AchList(props) {
     return (
         <div className={"achListBox"}>
             <div id={"leaderHeader"}>
-                <h3 id={"leaderHeaderText"}>You should play as:
+                <h3 className={"leaderHeaderText"}>You should play as: </h3>
+                <div className={"leaderSelection"}>
                     <img className={"leaderImage"} src={imageSwitch.getLeaderImage(data.leader)} alt={data.leader} />
-                    {data.leader}
-                </h3>
+                    <h3 className={"leaderHeaderText"}>{data.leader}</h3>
+                </div>
+
             </div>
             <h4 className={"listHeader"}>
                 {props.usingUserData

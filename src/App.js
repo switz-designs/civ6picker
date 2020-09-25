@@ -58,14 +58,13 @@ function App() {
                     setFetchingDataCallback={setFetchingData}
                 />
 
-                {/*{randomLeaderData*/}
-                {/*    ? <AchList data={randomLeaderData} usingUserData={usingUserData} />*/}
-                {/*    : ""*/}
-                {/*}*/}
 
                 {fetchingData
                     // Display while querying API
-                    ? <Loader className={"loader"} type="Grid" color="#169d98" height={80} width={80} />
+                    ? <div className={"loaderBox"}>
+                        <Loader className={"loader"} type="Grid" color="#169d98" height={80} width={80} />
+                        Fetching data from Steam...
+                    </div>
                     // Display achievement list if present, otherwise display nothing
                     : (randomLeaderData
                         ? <AchList data={randomLeaderData} usingUserData={usingUserData} />
