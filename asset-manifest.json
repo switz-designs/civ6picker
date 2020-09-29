@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/civ6picker/static/css/main.451c5357.chunk.css",
-    "main.js": "/civ6picker/static/js/main.53883957.chunk.js",
-    "main.js.map": "/civ6picker/static/js/main.53883957.chunk.js.map",
+    "main.js": "/civ6picker/static/js/main.520737b2.chunk.js",
+    "main.js.map": "/civ6picker/static/js/main.520737b2.chunk.js.map",
     "runtime-main.js": "/civ6picker/static/js/runtime-main.3c6a5991.js",
     "runtime-main.js.map": "/civ6picker/static/js/runtime-main.3c6a5991.js.map",
     "static/css/2.f87e9f44.chunk.css": "/civ6picker/static/css/2.f87e9f44.chunk.css",
     "static/js/2.693d945a.chunk.js": "/civ6picker/static/js/2.693d945a.chunk.js",
     "static/js/2.693d945a.chunk.js.map": "/civ6picker/static/js/2.693d945a.chunk.js.map",
     "index.html": "/civ6picker/index.html",
-    "precache-manifest.806246d1ed3212272aae77ec3baf0438.js": "/civ6picker/precache-manifest.806246d1ed3212272aae77ec3baf0438.js",
+    "precache-manifest.3c24251ac82a0ccacd09bc0a0ae5a290.js": "/civ6picker/precache-manifest.3c24251ac82a0ccacd09bc0a0ae5a290.js",
     "service-worker.js": "/civ6picker/service-worker.js",
     "static/css/2.f87e9f44.chunk.css.map": "/civ6picker/static/css/2.f87e9f44.chunk.css.map",
     "static/css/main.451c5357.chunk.css.map": "/civ6picker/static/css/main.451c5357.chunk.css.map",
@@ -74,6 +74,6 @@
     "static/css/2.f87e9f44.chunk.css",
     "static/js/2.693d945a.chunk.js",
     "static/css/main.451c5357.chunk.css",
-    "static/js/main.53883957.chunk.js"
+    "static/js/main.520737b2.chunk.js"
   ]
 }
