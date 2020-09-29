@@ -33,7 +33,7 @@ function SteamIdForm(props) {
                 })
             }
             // Query API for all achievement/leader data
-            else if (inputHasChanged || !props.userData) {
+            else if (inputHasChanged || !props.userData || queryError.errorText === "Profile is not public") {
                 network.getUserLeaders(steamIdInput, props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
                 setInputHasChanged(false)
             }
@@ -55,6 +55,7 @@ function SteamIdForm(props) {
 
 
     function handleTextChange(event) {
+        //Ensure user input is numeric only
         setSteamIdInput(event.target.value.replace(/[^0-9]/g, '' ));
         setInputHasChanged(true)
     }
