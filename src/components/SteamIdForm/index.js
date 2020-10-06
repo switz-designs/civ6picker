@@ -10,6 +10,7 @@ function SteamIdForm(props) {
         error: false,
         errorText: ""
     });
+    const [showSlimExplainer, setShowSlimExplainer] = useState(false)
 
     function handleSubmit(event) {
         // Prevent page from refreshing on form submit
@@ -33,7 +34,7 @@ function SteamIdForm(props) {
                 })
             }
             // Query API for all achievement/leader data
-            else if (inputHasChanged || !props.userData || queryError.errorText === "Profile is not public") {
+            else if (inputHasChanged || !props.userData) {
                 network.getUserLeaders(steamIdInput, props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
                 setInputHasChanged(false)
             }
@@ -67,30 +68,71 @@ function SteamIdForm(props) {
     }
 
 
+    function toggleSlimExplainer(event) {
+        console.log("Toggling slim explainer")
+        setShowSlimExplainer(!showSlimExplainer)
+    }
+
+
     return (
         <form id={"steamIdForm"} onSubmit={handleSubmit}>
-            <div id={"userInputBox"}>
-                <div id={"userInputBar"}>
-                    <div className={"steamIdHelpBox"}>
-                        <div className={"steamIdHelpIcon"}>
-                            ?
+            <div id={"formRow"}>
+                <div id={"userInputBox"}>
+                    <div id={"userInputBar"}>
+                        <div className={"steamIdHelpBox"}>
+                            <div className={"steamIdHelpIcon"}>
+                                ?
+                            </div>
+                            <div className={"steamIdHelpTextPopup"}>
+                                Enter your 17-digit Steam ID here to receive a leader recommendation based on your unearned
+                                Steam achievements. Click <a href={"https://www.businessinsider.com/how-to-find-steam-id"} target={"_blank"} rel={"noopener noreferrer"}>here</a> if you need help finding it.
+                                <p className={"emphasisText"}>Game Details must be set to public on your Steam profile for this feature to work.</p>
+                            </div>
                         </div>
-                        <div className={"steamIdHelpTextPopup"}>
-                            Enter your 17-digit Steam ID here to receive a leader recommendation based on your unearned
-                            Steam achievements. Click <a href={"https://www.businessinsider.com/how-to-find-steam-id"} target={"_blank"} rel={"noopener noreferrer"}>here</a> if you need help finding it.
-                            <p className={"emphasisText"}>Game Details must be set to public on your Steam profile for this feature to work.</p>
-                        </div>
-                    </div>
 
-                    <label className={"checkboxLabel"}>
-                        Use Steam ID
-                        <input id={"cbUseSteamId"} type="checkbox" value={useUserData} onChange={handleCbChange} />
-                    </label>
-                    <input className={"textInput"} type="text" value={steamIdInput} onChange={handleTextChange} disabled={!useUserData} />
+                        <label className={"checkboxLabel"}>
+                            Use Steam ID
+                            <input id={"cbUseSteamId"} type="checkbox" value={useUserData} onChange={handleCbChange} />
+                        </label>
+                        <input className={"textInput"} type="text" value={steamIdInput} onChange={handleTextChange} disabled={!useUserData} />
+
+                    </div>
+                    <div id={"errorText"}>{queryError.errorText}</div>
+                    <input className={"submitButton"} type="submit" value="Who Should I Play?" />
 
                 </div>
-                <div id={"errorText"}>{queryError.errorText}</div>
-                <input className={"submitButton"} type="submit" value="Who Should I Play?" />
+                <div id={"explainerWide"} className={"explainerBox"}>
+                    <h3 className={"explainerHeader"}>What is this thing? Why is this thing?</h3>
+                    <p className={"explainerText"}>
+                        SC6CS is a tool I built to help with achievement grinding in Sid Meier's Civilization VI. Ask it who you
+                        should play, and it will randomly return one of the 53 leaders currently in the game, as well as all
+                        achievements specific to that leader. If you choose to enter your Steam ID, it will analyze your Steam
+                        achievement data and offer a personalized suggestion based on which achievements you have not yet unlocked.
+                    </p>
+                    <p className={"explainerText"}>
+                        Don't like the suggestion being offered? Keep clicking until you do!
+                    </p>
+
+                </div>
+            </div>
+            <div id={"explainerSlim"}>
+                <div onClick={toggleSlimExplainer} id={"explainerHeaderSlim"} className={"explainerHeader"}>What is this thing? Why is this thing?</div>
+                {showSlimExplainer
+                    ?
+                    <div onClick={toggleSlimExplainer} id={"explainerSlimText"} className={"explainerBox"}>
+                        <p className={"explainerText"}>
+                            SC6CS is a tool I built to help with achievement grinding in Sid Meier's Civilization VI. Ask it who you
+                            should play, and it will randomly return one of the 53 leaders currently in the game, as well as all
+                            achievements specific to that leader. If you choose to enter your Steam ID, it will analyze your Steam
+                            achievement data and offer a personalized suggestion based on which achievements you have not yet unlocked.
+                        </p>
+                        <p className={"explainerText"}>
+                            Don't like the suggestion being offered? Keep clicking until you do!
+                        </p>
+                    </div>
+                    :
+                    null
+                }
 
             </div>
         </form>

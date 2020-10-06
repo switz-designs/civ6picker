@@ -71,7 +71,7 @@ body {
     bottom: 0;
     background: rgba(52, 58, 64, 1);
     margin: auto;
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 5px 0;
 }
@@ -83,15 +83,18 @@ body {
 }
 
 .footerLink {
-    margin: auto 5px;
+    margin: auto 10px;
     text-decoration: underline;
     cursor: pointer;
 }
 
 #disclaimerText {
     padding: 5px;
+    margin-top: 5px;
     font-size: small;
-    overflow-y: auto;
+    max-height: 30vh;
+    overflow-y: scroll;
+    background: rgba(52, 58, 84, 1);
 }
 
 .loaderBox {
