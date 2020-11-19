@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1accfacc3d9181c82227f5a55cfa9862",
+    "revision": "7f95a527877192a6245f4a3757ad470f",
     "url": "/civ6picker/index.html"
   },
   {
-    "revision": "8ce4d2a16f6cf6315f1e",
+    "revision": "d9bd1d440172003041d4",
     "url": "/civ6picker/static/css/2.f87e9f44.chunk.css"
   },
   {
-    "revision": "2bb753cc139bfd4c0e08",
+    "revision": "82a7254ae340d0ef5669",
     "url": "/civ6picker/static/css/main.5e1125cd.chunk.css"
   },
   {
-    "revision": "8ce4d2a16f6cf6315f1e",
-    "url": "/civ6picker/static/js/2.693d945a.chunk.js"
+    "revision": "d9bd1d440172003041d4",
+    "url": "/civ6picker/static/js/2.6bc977ee.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/civ6picker/static/js/2.693d945a.chunk.js.LICENSE.txt"
+    "url": "/civ6picker/static/js/2.6bc977ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2bb753cc139bfd4c0e08",
-    "url": "/civ6picker/static/js/main.1817e120.chunk.js"
+    "revision": "82a7254ae340d0ef5669",
+    "url": "/civ6picker/static/js/main.cc2964bf.chunk.js"
   },
   {
     "revision": "08bacb5ef6eecca65981",
@@ -98,6 +98,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7c90d9c45eed8965066c1b7d5fbec558",
     "url": "/civ6picker/static/media/Gorgo.7c90d9c4.webp"
+  },
+  {
+    "revision": "585321829a43109c38aea795d58401b7",
+    "url": "/civ6picker/static/media/Hammurabi.58532182.webp"
   },
   {
     "revision": "1f4dec09ba0f3159e02e9df1eb92e3a1",

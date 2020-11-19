@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/civ6picker/static/css/main.5e1125cd.chunk.css",
-    "main.js": "/civ6picker/static/js/main.1817e120.chunk.js",
-    "main.js.map": "/civ6picker/static/js/main.1817e120.chunk.js.map",
+    "main.js": "/civ6picker/static/js/main.cc2964bf.chunk.js",
+    "main.js.map": "/civ6picker/static/js/main.cc2964bf.chunk.js.map",
     "runtime-main.js": "/civ6picker/static/js/runtime-main.3c6a5991.js",
     "runtime-main.js.map": "/civ6picker/static/js/runtime-main.3c6a5991.js.map",
     "static/css/2.f87e9f44.chunk.css": "/civ6picker/static/css/2.f87e9f44.chunk.css",
-    "static/js/2.693d945a.chunk.js": "/civ6picker/static/js/2.693d945a.chunk.js",
-    "static/js/2.693d945a.chunk.js.map": "/civ6picker/static/js/2.693d945a.chunk.js.map",
+    "static/js/2.6bc977ee.chunk.js": "/civ6picker/static/js/2.6bc977ee.chunk.js",
+    "static/js/2.6bc977ee.chunk.js.map": "/civ6picker/static/js/2.6bc977ee.chunk.js.map",
     "index.html": "/civ6picker/index.html",
-    "precache-manifest.669bf9d990ed74a256ac50338001306d.js": "/civ6picker/precache-manifest.669bf9d990ed74a256ac50338001306d.js",
+    "precache-manifest.329ec059aad9d304ac375a4da131dac7.js": "/civ6picker/precache-manifest.329ec059aad9d304ac375a4da131dac7.js",
     "service-worker.js": "/civ6picker/service-worker.js",
     "static/css/2.f87e9f44.chunk.css.map": "/civ6picker/static/css/2.f87e9f44.chunk.css.map",
     "static/css/main.5e1125cd.chunk.css.map": "/civ6picker/static/css/main.5e1125cd.chunk.css.map",
-    "static/js/2.693d945a.chunk.js.LICENSE.txt": "/civ6picker/static/js/2.693d945a.chunk.js.LICENSE.txt",
+    "static/js/2.6bc977ee.chunk.js.LICENSE.txt": "/civ6picker/static/js/2.6bc977ee.chunk.js.LICENSE.txt",
     "static/media/Alexander.webp": "/civ6picker/static/media/Alexander.502542e8.webp",
     "static/media/Amanitore.webp": "/civ6picker/static/media/Amanitore.3b8f70a4.webp",
     "static/media/Ambiorix.webp": "/civ6picker/static/media/Ambiorix.cf391469.webp",
@@ -32,6 +32,7 @@
     "static/media/Gilgamesh.webp": "/civ6picker/static/media/Gilgamesh.ad1c9bf9.webp",
     "static/media/Gitarja.webp": "/civ6picker/static/media/Gitarja.3462aabb.webp",
     "static/media/Gorgo.webp": "/civ6picker/static/media/Gorgo.7c90d9c4.webp",
+    "static/media/Hammurabi.webp": "/civ6picker/static/media/Hammurabi.58532182.webp",
     "static/media/Harald_Hardrada.webp": "/civ6picker/static/media/Harald_Hardrada.1f4dec09.webp",
     "static/media/Hojo_Tokimune.webp": "/civ6picker/static/media/Hojo_Tokimune.62f3da2d.webp",
     "static/media/Jadwiga.webp": "/civ6picker/static/media/Jadwiga.68dea13a.webp",
@@ -72,8 +73,8 @@
   "entrypoints": [
     "static/js/runtime-main.3c6a5991.js",
     "static/css/2.f87e9f44.chunk.css",
-    "static/js/2.693d945a.chunk.js",
+    "static/js/2.6bc977ee.chunk.js",
     "static/css/main.5e1125cd.chunk.css",
-    "static/js/main.1817e120.chunk.js"
+    "static/js/main.cc2964bf.chunk.js"
   ]
 }
