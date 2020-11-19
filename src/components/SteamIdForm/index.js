@@ -105,7 +105,7 @@ function SteamIdForm(props) {
                     <h3 className={"explainerHeader"}>What is this thing? Why is this thing?</h3>
                     <p className={"explainerText"}>
                         SC6CS is a tool I built to help with achievement grinding in Sid Meier's Civilization VI. Ask it who you
-                        should play, and it will randomly return one of the 53 leaders currently in the game, as well as all
+                        should play, and it will randomly return one of the 54 leaders currently in the game, as well as all
                         achievements specific to that leader. If you choose to enter your Steam ID, it will analyze your Steam
                         achievement data and offer a personalized suggestion based on which achievements you have not yet unlocked.
                     </p>
@@ -122,7 +122,7 @@ function SteamIdForm(props) {
                     <div onClick={toggleSlimExplainer} id={"explainerSlimText"} className={"explainerBox"}>
                         <p className={"explainerText"}>
                             SC6CS is a tool I built to help with achievement grinding in Sid Meier's Civilization VI. Ask it who you
-                            should play, and it will randomly return one of the 53 leaders currently in the game, as well as all
+                            should play, and it will randomly return one of the 54 leaders currently in the game, as well as all
                             achievements specific to that leader. If you choose to enter your Steam ID, it will analyze your Steam
                             achievement data and offer a personalized suggestion based on which achievements you have not yet unlocked.
                         </p>
@@ -133,7 +133,6 @@ function SteamIdForm(props) {
                     :
                     null
                 }
-
             </div>
         </form>
     )

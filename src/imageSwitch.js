@@ -36,6 +36,8 @@ export function getLeaderImage(leader) {
             return require('./images/leadericons/Gitarja.webp');
         case 'Gorgo':
             return require('./images/leadericons/Gorgo.webp');
+        case 'Hammurabi':
+            return require('./images/leadericons/Hammurabi.webp');
         case 'Harald Hardrada':
             return require('./images/leadericons/Harald_Hardrada.webp');
         case 'Hojo Tokimune':
