@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7f95a527877192a6245f4a3757ad470f",
+    "revision": "7ba93f4a266d8e9e07f102544b32b931",
     "url": "/civ6picker/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/civ6picker/static/css/2.f87e9f44.chunk.css"
   },
   {
-    "revision": "82a7254ae340d0ef5669",
+    "revision": "0988b9196a87061995e5",
     "url": "/civ6picker/static/css/main.5e1125cd.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/civ6picker/static/js/2.6bc977ee.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "82a7254ae340d0ef5669",
-    "url": "/civ6picker/static/js/main.cc2964bf.chunk.js"
+    "revision": "0988b9196a87061995e5",
+    "url": "/civ6picker/static/js/main.1e668cc0.chunk.js"
   },
   {
     "revision": "08bacb5ef6eecca65981",
