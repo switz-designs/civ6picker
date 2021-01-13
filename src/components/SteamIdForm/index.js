@@ -3,8 +3,9 @@ import * as network from '../../network'
 import './SteamIdForm.css'
 
 function SteamIdForm(props) {
-    const [steamIdInput, setSteamIdInput] = useState("");
-    const [useUserData, setUseUserData] = useState(false);
+    const [steamIdInput, setSteamIdInput] = useState(localStorage.getItem("steamId") || "");
+    // const [useUserData, setUseUserData] = useState(true);
+    const [useUserData, setUseUserData] = useState(JSON.parse(localStorage.getItem("useUserData")) || false);
     const [inputHasChanged, setInputHasChanged] = useState(true);
     const [queryError, setQueryError] = useState({
         error: false,
@@ -37,6 +38,7 @@ function SteamIdForm(props) {
             else if (inputHasChanged || !props.userData) {
                 network.getUserLeaders(steamIdInput, props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
                 setInputHasChanged(false)
+                localStorage.setItem("steamId", steamIdInput)
             }
             else if (props.userData) {
                 // Get new random leader from existing query data
@@ -47,6 +49,7 @@ function SteamIdForm(props) {
             // Query API for achievement/leader data filtered by user ID
             network.getAllLeaders(props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
             setInputHasChanged(false)
+            
         }
         else if (props.userData) {
             // Get new random leader from existing query data
@@ -63,6 +66,7 @@ function SteamIdForm(props) {
 
 
     function handleCbChange(event) {
+        localStorage.setItem("useUserData", JSON.stringify(!useUserData))
         setUseUserData(!useUserData);
         setInputHasChanged(true)
     }
@@ -92,7 +96,7 @@ function SteamIdForm(props) {
 
                         <label className={"checkboxLabel"}>
                             Use Steam ID
-                            <input id={"cbUseSteamId"} type="checkbox" value={useUserData} onChange={handleCbChange} />
+                            <input id={"cbUseSteamId"} type="checkbox" defaultChecked={useUserData} onChange={handleCbChange} />
                         </label>
                         <input className={"textInput"} type="text" value={steamIdInput} onChange={handleTextChange} disabled={!useUserData} />
 
