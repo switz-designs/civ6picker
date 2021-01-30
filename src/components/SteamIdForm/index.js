@@ -3,6 +3,8 @@ import * as network from '../../network'
 import './SteamIdForm.css'
 
 function SteamIdForm(props) {
+    // TODO: Create constant for explainer text
+
     const [steamIdInput, setSteamIdInput] = useState(localStorage.getItem("steamId") || "");
     // const [useUserData, setUseUserData] = useState(true);
     const [useUserData, setUseUserData] = useState(JSON.parse(localStorage.getItem("useUserData")) || false);
@@ -49,7 +51,7 @@ function SteamIdForm(props) {
             // Query API for achievement/leader data filtered by user ID
             network.getAllLeaders(props.setUserDataCallback, props.getRandomLeaderCallback, setQueryError, props.setUsingUserDataCallback, props.setFetchingDataCallback);
             setInputHasChanged(false)
-            
+
         }
         else if (props.userData) {
             // Get new random leader from existing query data
@@ -109,7 +111,7 @@ function SteamIdForm(props) {
                     <h3 className={"explainerHeader"}>What is this thing? Why is this thing?</h3>
                     <p className={"explainerText"}>
                         SC6CS is a tool I built to help with achievement grinding in Sid Meier's Civilization VI. Ask it who you
-                        should play, and it will randomly return one of the 54 leaders currently in the game, as well as all
+                        should play, and it will randomly return one of the 57 leaders currently in the game, as well as all
                         achievements specific to that leader. If you choose to enter your Steam ID, it will analyze your Steam
                         achievement data and offer a personalized suggestion based on which achievements you have not yet unlocked.
                     </p>
@@ -126,7 +128,7 @@ function SteamIdForm(props) {
                     <div onClick={toggleSlimExplainer} id={"explainerSlimText"} className={"explainerBox"}>
                         <p className={"explainerText"}>
                             SC6CS is a tool I built to help with achievement grinding in Sid Meier's Civilization VI. Ask it who you
-                            should play, and it will randomly return one of the 54 leaders currently in the game, as well as all
+                            should play, and it will randomly return one of the 57 leaders currently in the game, as well as all
                             achievements specific to that leader. If you choose to enter your Steam ID, it will analyze your Steam
                             achievement data and offer a personalized suggestion based on which achievements you have not yet unlocked.
                         </p>

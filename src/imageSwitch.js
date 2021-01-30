@@ -6,6 +6,8 @@ export function getLeaderImage(leader) {
             return require('./images/leadericons/Amanitore.webp');
         case 'Ambiorix':
             return require('./images/leadericons/Ambiorix.webp');
+        case 'Bà Triệu':
+            return require('./images/leadericons/Ba_Trieu.webp');
         case 'Basil II':
             return require('./images/leadericons/Basil_II.webp');
         case 'Catherine de Medici (Black Queen)':
@@ -50,6 +52,10 @@ export function getLeaderImage(leader) {
             return require('./images/leadericons/John_Curtin.webp');
         case 'Kristina':
             return require('./images/leadericons/Kristina.webp');
+        case 'Kublai Khan (China)':
+            return require('./images/leadericons/Kublai_Khan_(China).webp');
+        case 'Kublai Khan (Mongolia)':
+            return require('./images/leadericons/Kublai_Khan_(Mongolia).webp');
         case 'Kupe':
             return require('./images/leadericons/Kupe.webp');
         case 'Lady Six Sky':
