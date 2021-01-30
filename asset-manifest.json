@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/civ6picker/static/css/main.5e1125cd.chunk.css",
-    "main.js": "/civ6picker/static/js/main.1e668cc0.chunk.js",
-    "main.js.map": "/civ6picker/static/js/main.1e668cc0.chunk.js.map",
+    "main.js": "/civ6picker/static/js/main.0a5990d1.chunk.js",
+    "main.js.map": "/civ6picker/static/js/main.0a5990d1.chunk.js.map",
     "runtime-main.js": "/civ6picker/static/js/runtime-main.3c6a5991.js",
     "runtime-main.js.map": "/civ6picker/static/js/runtime-main.3c6a5991.js.map",
     "static/css/2.f87e9f44.chunk.css": "/civ6picker/static/css/2.f87e9f44.chunk.css",
-    "static/js/2.6bc977ee.chunk.js": "/civ6picker/static/js/2.6bc977ee.chunk.js",
-    "static/js/2.6bc977ee.chunk.js.map": "/civ6picker/static/js/2.6bc977ee.chunk.js.map",
+    "static/js/2.f9717b30.chunk.js": "/civ6picker/static/js/2.f9717b30.chunk.js",
+    "static/js/2.f9717b30.chunk.js.map": "/civ6picker/static/js/2.f9717b30.chunk.js.map",
     "index.html": "/civ6picker/index.html",
-    "precache-manifest.ec2629e8a613276b459bbefa8c7c7ca1.js": "/civ6picker/precache-manifest.ec2629e8a613276b459bbefa8c7c7ca1.js",
+    "precache-manifest.0192e2f6c2841ce39dbaeccdeae2b53a.js": "/civ6picker/precache-manifest.0192e2f6c2841ce39dbaeccdeae2b53a.js",
     "service-worker.js": "/civ6picker/service-worker.js",
     "static/css/2.f87e9f44.chunk.css.map": "/civ6picker/static/css/2.f87e9f44.chunk.css.map",
     "static/css/main.5e1125cd.chunk.css.map": "/civ6picker/static/css/main.5e1125cd.chunk.css.map",
-    "static/js/2.6bc977ee.chunk.js.LICENSE.txt": "/civ6picker/static/js/2.6bc977ee.chunk.js.LICENSE.txt",
+    "static/js/2.f9717b30.chunk.js.LICENSE.txt": "/civ6picker/static/js/2.f9717b30.chunk.js.LICENSE.txt",
     "static/media/Alexander.webp": "/civ6picker/static/media/Alexander.502542e8.webp",
     "static/media/Amanitore.webp": "/civ6picker/static/media/Amanitore.3b8f70a4.webp",
     "static/media/Ambiorix.webp": "/civ6picker/static/media/Ambiorix.cf391469.webp",
+    "static/media/Ba_Trieu.webp": "/civ6picker/static/media/Ba_Trieu.7b6b897f.webp",
     "static/media/Basil_II.webp": "/civ6picker/static/media/Basil_II.8796839f.webp",
     "static/media/Catherine_de_Medici_(Black Queen).webp": "/civ6picker/static/media/Catherine_de_Medici_(Black Queen).4c2d394a.webp",
     "static/media/Catherine_de_Medici_(Magnificence).webp": "/civ6picker/static/media/Catherine_de_Medici_(Magnificence).680dbcae.webp",
@@ -39,6 +40,8 @@
     "static/media/Jayavarman_VII.webp": "/civ6picker/static/media/Jayavarman_VII.83e26835.webp",
     "static/media/John_Curtin.webp": "/civ6picker/static/media/John_Curtin.d77ddaec.webp",
     "static/media/Kristina.webp": "/civ6picker/static/media/Kristina.6ee01969.webp",
+    "static/media/Kublai_Khan_(China).webp": "/civ6picker/static/media/Kublai_Khan_(China).fb9c14a8.webp",
+    "static/media/Kublai_Khan_(Mongolia).webp": "/civ6picker/static/media/Kublai_Khan_(Mongolia).2821a5be.webp",
     "static/media/Kupe.webp": "/civ6picker/static/media/Kupe.efb46166.webp",
     "static/media/Lady_Six_Sky.webp": "/civ6picker/static/media/Lady_Six_Sky.c62581a0.webp",
     "static/media/Lautaro.webp": "/civ6picker/static/media/Lautaro.31640a38.webp",
@@ -73,8 +76,8 @@
   "entrypoints": [
     "static/js/runtime-main.3c6a5991.js",
     "static/css/2.f87e9f44.chunk.css",
-    "static/js/2.6bc977ee.chunk.js",
+    "static/js/2.f9717b30.chunk.js",
     "static/css/main.5e1125cd.chunk.css",
-    "static/js/main.1e668cc0.chunk.js"
+    "static/js/main.0a5990d1.chunk.js"
   ]
 }

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ba93f4a266d8e9e07f102544b32b931",
+    "revision": "07eb3fbd99607570850f208b8e11c0c1",
     "url": "/civ6picker/index.html"
   },
   {
-    "revision": "d9bd1d440172003041d4",
+    "revision": "f98c398f1b5b7924c0cd",
     "url": "/civ6picker/static/css/2.f87e9f44.chunk.css"
   },
   {
-    "revision": "0988b9196a87061995e5",
+    "revision": "576aa2492a57d7541012",
     "url": "/civ6picker/static/css/main.5e1125cd.chunk.css"
   },
   {
-    "revision": "d9bd1d440172003041d4",
-    "url": "/civ6picker/static/js/2.6bc977ee.chunk.js"
+    "revision": "f98c398f1b5b7924c0cd",
+    "url": "/civ6picker/static/js/2.f9717b30.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/civ6picker/static/js/2.6bc977ee.chunk.js.LICENSE.txt"
+    "url": "/civ6picker/static/js/2.f9717b30.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0988b9196a87061995e5",
-    "url": "/civ6picker/static/js/main.1e668cc0.chunk.js"
+    "revision": "576aa2492a57d7541012",
+    "url": "/civ6picker/static/js/main.0a5990d1.chunk.js"
   },
   {
     "revision": "08bacb5ef6eecca65981",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cf39146991c3dccc6fafd9ff1eb09912",
     "url": "/civ6picker/static/media/Ambiorix.cf391469.webp"
+  },
+  {
+    "revision": "7b6b897fecf5dd7f33d66aadf6d96fe5",
+    "url": "/civ6picker/static/media/Ba_Trieu.7b6b897f.webp"
   },
   {
     "revision": "8796839f95275e01ffbb14f2dff11bc7",
@@ -126,6 +130,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "6ee019697cbd18d16063e46aee32512a",
     "url": "/civ6picker/static/media/Kristina.6ee01969.webp"
+  },
+  {
+    "revision": "fb9c14a86ccf18da024bb6b269edcf80",
+    "url": "/civ6picker/static/media/Kublai_Khan_(China).fb9c14a8.webp"
+  },
+  {
+    "revision": "2821a5bee21a572e807f38299f3023d3",
+    "url": "/civ6picker/static/media/Kublai_Khan_(Mongolia).2821a5be.webp"
   },
   {
     "revision": "efb46166cbb100e18a8bc6cddee929f7",
