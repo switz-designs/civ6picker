@@ -48,6 +48,8 @@ export function getLeaderImage(leader) {
             return require('./images/leadericons/Jadwiga.webp');
         case 'Jayavarman VII':
             return require('./images/leadericons/Jayavarman_VII.webp');
+        case 'João III':
+            return require('./images/leadericons/Joao_III.webp');
         case 'John Curtin':
             return require('./images/leadericons/John_Curtin.webp');
         case 'Kristina':
