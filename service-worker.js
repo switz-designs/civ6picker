@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/civ6picker/precache-manifest.0192e2f6c2841ce39dbaeccdeae2b53a.js"
+  "/civ6picker/precache-manifest.8e343e87e7d67e32343dd0e61f06a2a0.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "07eb3fbd99607570850f208b8e11c0c1",
+    "revision": "f39039ef6743332b426500265613c155",
     "url": "/civ6picker/index.html"
   },
   {
-    "revision": "f98c398f1b5b7924c0cd",
+    "revision": "928ebda13b86c486cef5",
     "url": "/civ6picker/static/css/2.f87e9f44.chunk.css"
   },
   {
-    "revision": "576aa2492a57d7541012",
+    "revision": "bd7aa3f91f6f5ec72627",
     "url": "/civ6picker/static/css/main.5e1125cd.chunk.css"
   },
   {
-    "revision": "f98c398f1b5b7924c0cd",
-    "url": "/civ6picker/static/js/2.f9717b30.chunk.js"
+    "revision": "928ebda13b86c486cef5",
+    "url": "/civ6picker/static/js/2.cd52ffaf.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/civ6picker/static/js/2.f9717b30.chunk.js.LICENSE.txt"
+    "url": "/civ6picker/static/js/2.cd52ffaf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "576aa2492a57d7541012",
-    "url": "/civ6picker/static/js/main.0a5990d1.chunk.js"
+    "revision": "bd7aa3f91f6f5ec72627",
+    "url": "/civ6picker/static/js/main.9d3a3e6d.chunk.js"
   },
   {
     "revision": "08bacb5ef6eecca65981",
@@ -122,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "83e2683597dba6917076410a59e7a766",
     "url": "/civ6picker/static/media/Jayavarman_VII.83e26835.webp"
+  },
+  {
+    "revision": "00725eed9923f7dc986f3df3c9e76332",
+    "url": "/civ6picker/static/media/Joao_III.00725eed.webp"
   },
   {
     "revision": "d77ddaec81f882835d31215210959656",
